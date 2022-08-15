@@ -242,14 +242,6 @@ NSString * const IPSIncidentHeaderSystemIntegrityProtectionKey=@"sip";
             return nil;
         }
         
-        tString=inRepresentation[IPSIncidentHeaderCrashReporterKey];
-        
-        IPSFullCheckStringValueForKey(tString,IPSIncidentHeaderCrashReporterKey);
-        
-        _crashReporterKey=[[NSUUID alloc] initWithUUIDString:tString];
-        
-        
-        
         tString=inRepresentation[IPSIncidentHeaderSleepWakeUUIDKey];
         
         if (tString!=nil)
